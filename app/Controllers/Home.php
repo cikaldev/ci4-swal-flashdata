@@ -13,8 +13,8 @@ class Home extends BaseController
     helper(['form', 'url', 'custom']);
     $this->model = new KontakModel();
   }
-
-	public function index()
+  
+  public function index()
 	{
     $data['kontak'] = $this->model->findAll();
     return view('v_home', $data);
