@@ -15,10 +15,10 @@ class Home extends BaseController
   }
   
   public function index()
-	{
+  {
     $data['kontak'] = $this->model->findAll();
     return view('v_home', $data);
-	}
+  }
 
   public function tambah()
   {
